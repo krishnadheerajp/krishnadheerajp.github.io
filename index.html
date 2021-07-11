@@ -1,32 +1,254 @@
+<!doctype html>
+<html lang="en">
 
-<html>
-  <head>
-    <title>First Page</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>A paragraph consists of one or more sentences
-      that form a self-contained unit of discourse. The
-      start of a paragraph is indicated by a new
-      line.</p>
-     
-      <p>Text is easier to understand when it is split up
-      into units of text. For example, a book may have
-      chapters. Chapters can have subheadings. Under
-      each heading there will be one or more
-      paragraphs.</p>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <p>This is how we make words look <b>bold.</b></p>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-      <p>This is how we make a word appear <i>italic.</i></p>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
-      <p>The result of 2<sup>2</sup> is 4</p>
+  <link rel="icon" type="image/jpg" href="mypic.jpg">
 
-      <p>Water is represented as H<sub>2</sub>O</p>
+  <title>P Krishna Dheeraj's Profile</title>
 
-      <p>This is first line <br/> This is second line.</p>
+</head>
 
-      <p>This is first line. <hr/> This is second line.</p>
+<body>
 
-  </body>
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="mypic.jpg" alt="MyPic" class="rounded-circle" width="60" height="50">
+      </a>
+      <a class="navbar-brand fs-4" href="#">P Krishna Dheeraj</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 fs-5 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link navitems" id="abtm" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitems" id="edu" href="#myedu">My Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitems" id="skll" href="#myskills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitems" id="proj" href="#myproj">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitems" id="exp" href="#myexp">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitems" id="cm" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <div class="container my-5" id="about">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card pic-card">
+          <img src="mypic.jpg" class="card-img-top mb" alt="MyPic">
+        </div>
+      </div>
+      <div class="col">
+        <h1 class="text-center mb-5 mt-3"><u>About Me</u></h1>
+        <div class="card mt-3 abtme-card bg-dark text-center text-light">
+          <div class="card-body">
+            <p class="card-text" id="abtme">I am currently a student at VIT-AP pursuing my Bachelor's Degree in Computer
+              Science with Network Security. Currently, I am the technical lead of the GPUG Club in VIT-AP. I also love
+              learning about new technologies and advancements in the field of Computer Science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- My Education -->
+  <div class="container my-5" id="myedu">
+    <h1 class="text-center"><u>My Education</u></h1>
+    <table class="table my-5 table-dark table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Name of the Institution</th>
+          <th scope="col">Stream/Degree</th>
+          <th scope="col">Years of Education</th>
+          <th scope="col">Score Achieved</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Vellore Institute of Technology - AP</td>
+          <td> B.Tech (Computer Science With Specialization In Network Security)</td>
+          <td>2019-Present</td>
+          <td>9.34 CGPA (Till 1st year)</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Sri Chaitanya Junior College</td>
+          <td>Senior Secondary (XII) (MPC)</td>
+          <td>2018-2019</td>
+          <td>97.2 %</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Kendriya Vidyalaya Tirumalagiri</td>
+          <td>Secondary (X)</td>
+          <td>2017-2018</td>
+          <td>10 CGPA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Skills -->
+  <div class="container" id="myskills">
+    <h1 class="text-center mb-4 mt-5"><u>Skills</u></h1>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">Java</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">HTML</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">CSS</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">JavaScript</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">PHP</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">SQL</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">AJAX</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">Bootstrap</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark">R</span>
+    <span class="fs-4 mt-2 mx-1 badge bg-dark mb-4">Python</span>
+  </div>
+
+  <!-- Projects -->
+  <div class="container my-5" id="myproj">
+    <h1 class="text-center"><u>Projects</u></h1>
+    <div class="row mt-3 row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card bg-dark text-light">
+          <div class="card-body">
+            <h5 class="card-title">iDiscuss Forums</h5>
+            <a class="card-title fs-5" target="_blank"
+              href="https://idiscussforums.epizy.com/">https://idiscussforums.epizy.com/</a>
+            <p class="card-text mt-2">This is a technical forum website in which people can ask and resolve technical
+              queries along with messaging. It has been hosted and has SSL certificate also.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-light">
+          <div class="card-body">
+            <h5 class="card-title">Dine & Cheer Restaurant</h5>
+            <a class="card-title fs-5" target="_blank"
+              href="https://dineandcheer.epizy.com/">https://dineandcheer.epizy.com/</a>
+            <p class="card-text mt-2">This is a simple restaurant website in which we can place our orders. It has a
+              minimalistic backend and is focused on simple user interaction with the website. It has been hosted and
+              has SSL certificate also.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-light mb-4">
+          <div class="card-body">
+            <h5 class="card-title">My Profile</h5>
+            <a href="https://krishnadheerajp.github.io/" target="_blank"
+              class="card-title fs-5">https://krishnadheerajp.github.io/</a>
+            <p class="card-text mt-2">This is my profile website(current website) hosted in Github. Though it is quite
+              simple, it will help you understand about me
+              in a short span. You can also connect with me on social platforms from below links.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experiences -->
+  <div class="container my-5" id="myexp">
+    <h1 class="text-center"><u>Experiences</u></h1>
+    <table class="table my-5 table-dark table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Company/Organisation</th>
+          <th scope="col">Role</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>GPUG Club, VIT-AP</td>
+          <td>Technical Lead</td>
+          <td>July 2021-Present</td>
+          <td>Position of Responsibility</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Sparks Foundation</td>
+          <td>Web Developer</td>
+          <td>Jan 2021 - Feb 2021</td>
+          <td>Internship</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Math Club, VIT-AP</td>
+          <td>Technical Member</td>
+          <td>Nov 2020 - Jun 2021</td>
+          <td>Position of Responsibility</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Contact -->
+  <div class="container my-5 text-center" id="contactme">
+    <h1 class="text-center"><u>Contact</u></h1>
+    <ul class="list-group fs-3 mt-5">
+      <a target="_blank" href="https://www.linkedin.com/in/p-krishna-dheeraj-56a823202/"
+        class="my-1 list-group-item bg-dark text-light">Contact me via Linkedin <i class="fab fa-linkedin"></i> </a>
+      <a target="_blank" href="https://www.instagram.com/krishna._dheeraj/"
+        class="my-1 list-group-item bg-dark text-light">Contact me via Instagram <i
+          class="fab fa-instagram-square"></i></a>
+      <a href="mailto: dheeraj.19bcn7030@vitap.ac.in" class="my-1 list-group-item bg-dark text-light">Contact me via
+        Gmail <i class="fas fa-envelope-square"></i></a>
+      <a target="_blank" href="https://www.facebook.com/p.dheeraj.52"
+        class="my-1 list-group-item bg-dark text-light">Contact me via Facebook <i class="fab fa-facebook"></i> </a>
+    </ul>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-circle-up mx-1"></i> Back to Top</button>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-dark text-light mt-3 p-2">
+    <p class="text-center mb-0 py-3">&copy; P Krishna Dheeraj - 2021 | All rights reserved</p>
+    <p class="text-center mb-4">Website Designed & Developed by P Krishna Dheeraj</p>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- Font Awesome: Dont't copy -->
+  <script src="https://kit.fontawesome.com/273b239f7f.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+
 </html>
