@@ -3,6 +3,10 @@ body{
     overflow-x: hidden;
 }
 
+.navitems{
+    font-size: 20px;
+}
+
 @media (min-width:0px) and (max-width:600px){
     .tabcont{
         overflow-x: scroll;
