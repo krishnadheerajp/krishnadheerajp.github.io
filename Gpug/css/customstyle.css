@@ -78,7 +78,7 @@
 
 .main-info{
     position: relative;
-    width:60ch;
+    max-width: 80vw;
 }
 
 .main-info::before,
