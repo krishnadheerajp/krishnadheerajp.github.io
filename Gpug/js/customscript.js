@@ -8,24 +8,17 @@ $( document ).ready(function() {
  });
 
 scrollbutton = document.getElementById("scrollBtn");
-typeeffect = document.getElementsByClassName("main-info");
 
 window.onscroll = function() {scrollFunction()};
-window.onscroll = function() {scrollFunction1()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollbutton.style.display = "block";
+    $('.info').fadeToggle(2000);
+    $('.info').fadeToggle(2000);
   }
    else {
     scrollbutton.style.display = "none";
-  }
-}
-
-function scrollFunction1() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    $('.info').fadeToggle();
-    $('.info').fadeToggle(5000);
   }
 }
 

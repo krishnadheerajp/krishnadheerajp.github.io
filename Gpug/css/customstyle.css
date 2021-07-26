@@ -1,6 +1,7 @@
 :root{
     --typeSpeed: 6s;
-    --typeCharacters: 84;
+    --typeCharacters: 70;
+    --primaryColor: rgb(9, 255, 0);
 }
 
 .cont2,.cont3{
@@ -16,11 +17,11 @@
 }
 
 .icons{
-    font-size: 45px !important;
+    font-size: 40px !important;
 }
 
-.fab:hover,.fas:hover{
-    color: rgb(9, 255, 0);
+.bottomicons:hover{
+    color: var(--primaryColor);
 }
 
 .cus{
@@ -40,10 +41,8 @@
     background-color: rgb(45, 207, 67); 
     color: black;
     cursor: pointer;
-    padding: 15px;
     border-radius: 20px;
     font-size: 22px;
-    height: 75px;
   }
 
   body,.pic-card,.card{
@@ -52,28 +51,34 @@
 .nav-link:hover{
     text-decoration: underline;
     text-underline-position: under;
-    background-color: whitesmoke;
-    color: rgb(9, 255, 0) !important;
+    background-color: #121212;
+    color: var(--primaryColor) !important;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
 }
   .selected {
-    color: rgb(9, 255, 0) !important;
+    color: var(--primaryColor) !important;
     text-decoration: underline;
     text-underline-position: under;
     border-radius: 10px;
-    background-color: white;
+    background-color: #121212;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
 }
 
 .highlight{
     color: rgb(45, 207, 67);
 }
 
-body{
-    font-family: "Source Code Pro",monospace; 
-}
 
 .main-info{
     position: relative;
+    width:60ch;
 }
 
 .main-info::before,
