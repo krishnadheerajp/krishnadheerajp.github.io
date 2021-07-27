@@ -3,7 +3,6 @@ $( document ).ready(function() {
        
       $(".nav-link").removeClass("selected");
       $(this).addClass("selected");
-      return false;
   });
  });
 
