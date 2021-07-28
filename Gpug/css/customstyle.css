@@ -7,6 +7,34 @@
     box-sizing: border-box;
 }
 
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url('../images/bgvideo.mp4') center center / cover no-repeat;
+    }
+  
+    .fullscreen-bg__video {
+      display: none;
+    }
+  }
+.loadercont{
+    overflow: hidden;
+    padding-top: 40vh;
+}
 .cont2,.cont3{
     margin-top: 220px !important;
 }
@@ -35,7 +63,17 @@
     height: 50px;
     font-size: 20px;
 }
-
+.firstcont{
+    margin-top: 150px !important;
+}
+.firstpic{
+    height: 300px;
+    width: 100%;
+}
+.secondpic{
+    height: 500px;
+    width: 100%;
+}
 
 #scrollBtn {
     display: none;
@@ -96,15 +134,14 @@
 }
 
 .main-info::before{
-    background-color: #121212;
+    background: #121212;
     animation: typewriter var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards;
 }
 
 .main-info::after{
     width: 0.125em;
     background: white;
-    animation: 
-    typewriter var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards,
+    animation:typewriter var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards,
     blink 750ms steps(var(--typeCharacters)) infinite;
 }
 
@@ -134,29 +171,120 @@
 }
 
 .abtpic2{
-    height: 600px;
+    height: 500px;
+    width: 100%;
 }
 
 .dim{
     color: white;
 }
+.loader {
+    width: 150px;
+    margin: 50px auto 70px;
+    position: relative;
+}
+.loader .loading-1 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border: 1px solid rgb(110, 243, 110);
+    border-radius: 10px;
+    animation: turn 4s linear 1.75s infinite;
+}
+.loader .loading-1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(110, 243, 110);
+    box-shadow: 10px 0px 15px 0px rgb(110, 243, 110);
+    animation: load 2s linear infinite;
+}
+.loader .loading-2 {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    color: rgb(110, 243, 110);
+    font-size: 22px;
+    text-align: center;
+    animation: bounce 2s  linear infinite;
+}
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    87.5%, 100% {
+        width: 100%;
+    }
+}
+@keyframes turn {
+    0% {
+        transform: rotateY(0deg);
+    }
+    6.25%, 50% {
+        transform: rotateY(180deg);
+    }
+    56.25%, 100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes bounce {
+    0%,100% {
+        top: 10px;
+    }
+    12.5% {
+        top: 30px;
+    }
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background: #121212;
+    opacity: 0.3;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    opacity: 0.3;
+}
 
 .iframeteams{
-    height: 500px;
+    height: 1000px;
 }
 
 @media (min-width:0px) and (max-width: 767px) {
     .iframeteams{
-        height:2000px;
+        height:3000px;
+    }
+    .adminteam{
+        height: 4000px;
     }
   }
   @media (min-width:768px) and (max-width: 1199px) {
     .iframeteams{
-        height:1000px;
+        height:1500px;
+    }
+    .adminteam{
+        height: 1900px;
     }
   }
   @media (min-width:1200px) and (max-width: 1399px) {
     .iframeteams{
-        height:900px;
+        height:1000px;
+    }
+    .adminteam{
+        height: 1500px;
     }
   }

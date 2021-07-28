@@ -13,8 +13,6 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollbutton.style.display = "block";
-    $('.info').fadeToggle(2000);
-    $('.info').fadeToggle(2000);
   }
    else {
     scrollbutton.style.display = "none";

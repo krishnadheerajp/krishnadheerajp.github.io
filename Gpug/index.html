@@ -14,12 +14,23 @@
 </head>
 
 <body>
+    <div class="loadercont">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="loader">
+                    <div class="loading-1"></div>
+                    <div class="loading-2">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="ms-5">
                 <a class="navbar-brand fs-4" href="index.html">
-                    <img src="images/logo.svg" alt="GPUG Logo" width="80" height="50">
+                    <img src="images/logo.svg" alt="GPUG Logo" width="120" height="60">
                     GPUG VIT-AP
                 </a>
             </div>
@@ -31,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav fs-5 ms-auto me-5 mb-2 mb-lg-0">
                     <li class="nav-item mx-1">
-                        <a class="nav-link px-2 selected my-1"  href="index.html">Home</a>
+                        <a class="nav-link px-2 selected my-1" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link px-2 my-1" href="about.html">About</a>
+                        <a class="nav-link px-2 my-1" href="team.html">Team</a>
                     </li>
                     <li class="nav-item mx-1">
                         <a class="nav-link px-2 my-1" href="#">Events</a>
@@ -47,44 +58,94 @@
         </div>
     </nav>
 
-    <!-- Main Content 1 -->
+    <!-- Video Background -->
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="images/bgvideo.mp4" class="fullscreen-bg__video">
+            <source src="images/bgvideo.mp4" type="video/mp4">
+        </video>
+    </div>
 
-    <div class="container my-5 text-light" id="about">
+    <!-- Main Content 1 -->
+    <div class="container my-5 firstcont text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7">
                 <div class="main-info">
-                    <h2 class="featurette-heading">Lorem ipsum <span class="highlight">dolor sit
-                        amet</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ratione!.</p>
+                    <h2 class="featurette-heading">Hello there,<span class="highlight"> Welcome to the GPUG VIT-AP
+                            website</span></h2>
+                    <p class="fs-4 text">Scroll down to know more about this club</p>
                 </div>
             </div>
             <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" src="images/mainpic1.png" aria-label="Placeholder: 500x500"
+                <img class="bd-placeholder-img firstpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" src="images/mainpic.png" aria-label="Placeholder: 500x500"
                     preserveAspectRatio="xMidYMid slice" focusable="false">
                 <rect width="100%" height="100%" fill="#eee"></rect></img>
             </div>
         </div>
     </div>
 
-    
+
     <!-- Main Content 2 -->
     <div class="container cont2 text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    src="images/mainpic2.png" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice">
+                <img class="bd-placeholder-img secondpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" src="images/mainpic2.png" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice">
                 </img>
             </div>
             <div class="col-md-7 main-cont2">
                 <h2 class="featurette-heading text-center">Our Aim & Objective</h2>
-                <p class="info text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic illum
-                    pariatur
-                    obcaecati animi deserunt eos. Ipsa labore minima tenetur fugiat sed, dignissimos, dolores
-                    doloribus
-                    delectus quaerat officia enim expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi explicabo labore fugiat incidunt quo facilis quos earum ab quod soluta doloremque quas,
-                    iusto, minus praesentium quaerat totam recusandae tempora accusantium?</p>
+                <p class="info text-center fs-5">GPUG (Graphic Processing Users Group) Club aims to make every student
+                    familiar with the exploration of GPUs that play a gigantic role in various domains such as Parallel
+                    Computing, Machine learning, Deep Learning, Gaming, Augmented Reality, Virtual Reality, etc that the
+                    world runs on</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content 3 -->
+
+
+    <div class="container cont2 text-light" id="about">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 main-cont2">
+                <h2 class="featurette-heading text-center">What We Do?</h2>
+                <p class="info text-center fs-5">We help students explore and gain interest in GPU technology and its
+                    significance in different domains by contacting leading companies in the field and conducting
+                    various events and workshops by collaborating with them. In this way, we support students’ journey
+                    in becoming experienced in GPU technology and in helping them to fetch jobs related to this field.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    src="images/aboutpic1.png" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice">
+                </img>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content 4 -->
+
+
+    <div class="container cont2 text-light" id="about">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto abtpic2"
+                    width="500" src="images/aboutpic2.png" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice">
+                </img>
+            </div>
+            <div class="col-md-7 main-cont2">
+                <h2 class="featurette-heading text-center">How It Started?</h2>
+                <p class="info text-center fs-5">The GPUG club was established with the major goal in mind being spreading
+                    awareness about the GPU technology that has become a major part of various modern spheres of study.
+                    We decided to make this journey both fun and educational for students aiming to pursue a career in
+                    this area to understand and delve deeper into the technology that makes these devices as unique and
+                    useful as they are in many branches of technology such as machine learning, artificial intelligence,
+                    numerical analytics and many more. A group of students at VIT AP under the guidance of Dr.
+                    Nileshchandra Pikle formed GPUG which is now a full-fledged and well known technical club in the
+                    university.</p>
             </div>
         </div>
     </div>
@@ -93,25 +154,30 @@
     <!-- Main Container 3 -->
     <div class="container cont3 my-5">
         <div class="alert text-center text-light bg-dark" role="alert">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ab, quo laboriosam sapiente
-                dignissimos sit fugit veniam. Dolore rerum est pariatur consequuntur, voluptate excepturi autem nam
-                fugit eaque quam sunt.</p>
+            <p class="mb-0 fs-4 fw-bold">Whenever you need us, you can contact us from the below link</p>
             <hr>
-            <p class="mb-0">Whenever you need us, you can contact us from the below link</p>
-            <button type="button" class="btn cus mt-2 btn-light">Contact Us</button>
+            <a href="mailto:gpug.club@vitap.ac.in" style="color: black; text-decoration: none;"> <button type="button"
+                    class="btn cus mt-2 btn-light">Contact Us </button></a>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="container-fluid footer bg-dark text-light mt-5 p-2">
-        <div class="text-center"><p class="text-center fs-5">Made with <i class="fas fa-heart" style="color: red;"></i> by GPUG VIT-AP</p></div>
+        <div class="text-center">
+            <p class="text-center fs-5">Made with <i class="fas fa-heart" style="color: red;"></i> by GPUG VIT-AP</p>
+        </div>
         <hr>
         <p class="text-center mb-0">© Copyright GPUG VIT-AP - 2021 | All rights reserved</p>
         <div class="text-center icons">
-            <i class="fab bottomicons mx-2 fa-instagram-square"></i>
-            <i class="fab bottomicons mx-2 fa-discord"></i>
-            <i class="fab bottomicons mx-2 fa-linkedin"></i>
-            <i class="fas bottomicons mx-2 fa-envelope"></i>
+            <a href="https://www.instagram.com/gpug_vitap_/" target="_blank"
+                style="text-decoration: none; color: white;"><i
+                    class="fab bottomicons mx-2 fa-instagram-square"></i></a>
+            <a href="#" target="_blank" style="text-decoration: none; color: white;"><i
+                    class="fab bottomicons mx-2 fa-discord"></i></a>
+            <a href="https://www.linkedin.com/company/gpug-vit-ap/" target="_blank"
+                style="text-decoration: none; color: white;"><i class="fab bottomicons mx-2 fa-linkedin"></i></a>
+            <a href="mailto:gpug.club@vitap.ac.in" style="text-decoration: none; color: white;"><i
+                    class="fas bottomicons mx-2 fa-envelope"></i></a>
         </div>
     </div>
 
@@ -126,6 +192,21 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- Custom Script -->
     <script src="js/customscript.js"></script>
+    <script>
+        $('.container').hide();
+        $('nav').hide();
+        $('.footer').hide();
+        $('.fullscreen-bg').hide();
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.loadercont').css('display', 'none');
+                $('.container').show();
+                $('nav').show();
+                $('.footer').show();
+                $('.fullscreen-bg').show();
+            }, 1700);
+        });
+    </script>
     <!-- Font Awesome: Dont't copy -->
     <script src="https://kit.fontawesome.com/273b239f7f.js" crossorigin="anonymous"></script>
 </body>
