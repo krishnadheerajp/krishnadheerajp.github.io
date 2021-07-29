@@ -3,10 +3,11 @@
     --typeCharacters: 70;
     --primaryColor: rgb(9, 255, 0);
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
@@ -34,6 +35,10 @@
 .loadercont{
     overflow: hidden;
     padding-top: 40vh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
 }
 .cont2,.cont3{
     margin-top: 220px !important;
@@ -117,45 +122,6 @@
     color: rgb(45, 207, 67);
 }
 
-
-.main-info{
-    position: relative;
-    max-width: 80vw;
-}
-
-.main-info::before,
-.main-info::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.main-info::before{
-    background: #121212;
-    animation: typewriter var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards;
-}
-
-.main-info::after{
-    width: 0.125em;
-    background: white;
-    animation:typewriter var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards,
-    blink 750ms steps(var(--typeCharacters)) infinite;
-}
-
-@keyframes typewriter{
-    to {
-        left: 100%;
-    }
-}
-
-@keyframes blink{
-    to{
-        background: transparent;
-    }
-}
 .team{
     display: flex;
     flex-direction: row;
@@ -258,6 +224,38 @@
     height: 100%;
     background: #121212;
     opacity: 0.3;
+}
+
+
+body {
+  background-color: #000;
+}
+
+.main-info p {
+  padding: 0.5rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+.main-info p span.typed-text {
+  font-weight: normal;
+  color: #fff;
+}
+.main-info p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.main-info p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
 .iframeteams{

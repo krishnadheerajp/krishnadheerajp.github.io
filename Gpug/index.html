@@ -10,6 +10,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/customstyle.css">
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <title>GPUG VIT-AP</title>
 </head>
 
@@ -28,12 +30,11 @@
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="ms-5">
                 <a class="navbar-brand fs-4" href="index.html">
                     <img src="images/logo.svg" alt="GPUG Logo" width="120" height="60">
                     GPUG VIT-AP
                 </a>
-            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,10 +49,10 @@
                         <a class="nav-link px-2 my-1" href="team.html">Our Team</a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link px-2 my-1" href="#">Events</a>
+                        <a class="nav-link px-2 my-1" href="events.html">Events</a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link px-2 my-1" href="#">Contact Us</a>
+                        <a class="nav-link px-2 my-1" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -66,19 +67,19 @@
     </div>
 
     <!-- Main Content 1 -->
-    <div class="container my-5 firstcont text-light" id="about">
+    <div class="container text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
-            <div class="col-md-7">
-                <div class="main-info">
-                    <h2 class="featurette-heading">Hello there,<span class="highlight"> Welcome to the Graphic Processing Users Group</span></h2>
-                    <p class="fs-4 text">Scroll down to know more about this club</p>
-                </div>
+            <div class="col-md-7 main-cont2">
+                <h2 class="featurette-heading"><span class="greeting"> </span><span class="highlight">Welcome to Graphics Processing Users Group</span></h2>
+                <div class="main-info fs-4">
+                        <p>GPU: <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                      </div>
             </div>
             <div class="col-md-5">
-                <img class="bd-placeholder-img firstpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                <img class="bd-placeholder-img secondpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                     width="500" src="images/logo.svg" aria-label="Placeholder: 500x500"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" height="100%" fill="#eee"></rect></img>
+                    preserveAspectRatio="xMidYMid slice">
+                </img>
             </div>
         </div>
     </div>
@@ -95,7 +96,7 @@
             </div>
             <div class="col-md-7 main-cont2">
                 <h2 class="featurette-heading text-center">Our Aim & Objective</h2>
-                <p class="info text-center fs-5">GPUG (Graphic Processing Users Group) Club aims to make every student
+                <p class="info text-center fs-5">GPUG (Graphics Processing Users Group) Club aims to make every student
                     familiar with the exploration of GPUs that play a gigantic role in various domains such as Parallel
                     Computing, Machine learning, Deep Learning, Gaming, Augmented Reality, Virtual Reality, etc that the
                     world runs on</p>
@@ -187,24 +188,14 @@
     <script src="js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
     <!-- Custom Script -->
     <script src="js/customscript.js"></script>
     <script>
-        $('.container').hide();
-        $('nav').hide();
-        $('.footer').hide();
-        $('.fullscreen-bg').hide();
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('.loadercont').css('display', 'none');
-                $('.container').show();
-                $('nav').show();
-                $('.footer').show();
-                $('.fullscreen-bg').show();
-            }, 3700);
-        });
+    $(window).on( 'load',
+        function(){
+            $('.loadercont').fadeOut("slow");
+        }
+    )
     </script>
     <!-- Font Awesome: Dont't copy -->
     <script src="https://kit.fontawesome.com/273b239f7f.js" crossorigin="anonymous"></script>
