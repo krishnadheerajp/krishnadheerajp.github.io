@@ -11,7 +11,6 @@ section{
   margin-bottom: -250px;
 }
 
-
 .contact{
   position: relative;
   min-height: 100vh;
@@ -40,6 +39,7 @@ section{
 .container
 {
   width: 100%;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,9 @@ section{
   width: 80%;
   padding: 40px;
   background:  #fff;
+}
+#scrollBtn{
+  padding: 5px 35px 0 5px;
 }
 
 .cicons{
@@ -135,11 +138,11 @@ section{
 {
   color: #e91e63;
   font-size: 12px;
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
-.contactForm .inputBox input[type="submit"]
+.submit
 {
-  width: 100px;
+  width: 100%;
   background: #00bcd4;
   color: #fff;
   border: none;

@@ -3,6 +3,9 @@
     --typeCharacters: 70;
     --primaryColor: rgb(9, 255, 0);
 }
+body {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: #121212;
 }

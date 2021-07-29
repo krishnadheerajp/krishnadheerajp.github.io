@@ -39,12 +39,12 @@ body{
     transform-origin: top;
 }
 
-.teamcont .cards:hover .imgbox {
+.teamcont .cards:hover .imgbox{
     transform: translateY(30px) scale(0.5);
 }
 
 .cards:hover img{
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 .teamcont .cards .imgbox img{
