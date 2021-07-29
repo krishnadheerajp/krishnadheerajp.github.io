@@ -4,6 +4,7 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 section{
@@ -146,6 +147,9 @@ section{
   padding: 10px;
   font-size: 18px;
 }
+.contactForm{
+  width: 100%;
+}
 
 @media (max-width: 991px)
 {
@@ -169,7 +173,7 @@ section{
 
 @media (min-width: 992px){
   .contactForm{
-    width: 45%;
+    width: 100%;
   }
 }
 
