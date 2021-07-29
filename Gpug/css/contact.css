@@ -86,6 +86,10 @@ section{
   padding: 40px;
   background:  #fff;
 }
+
+.cicons{
+  color: black;
+}
 .contactForm h2
 {
   font-size: 30px;
