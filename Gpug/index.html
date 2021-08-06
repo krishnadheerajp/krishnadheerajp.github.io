@@ -10,6 +10,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/customstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="icon" type="image/jpg" href="images/logobg.png">
@@ -76,7 +78,7 @@
                         <p>GPU: <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
                       </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="zoom-in-left">
                 <img class="bd-placeholder-img secondpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                     width="500" src="images/logo.svg" aria-label="Placeholder: 500x500"
                     preserveAspectRatio="xMidYMid slice">
@@ -89,13 +91,13 @@
     <!-- Main Content 2 -->
     <div class="container cont2 text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-right">
                 <img class="bd-placeholder-img secondpic bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                     width="500" src="images/mainpic2.png" aria-label="Placeholder: 500x500"
                     preserveAspectRatio="xMidYMid slice">
                 </img>
             </div>
-            <div class="col-md-7 main-cont2">
+            <div class="col-md-7 main-cont2" data-aos="fade-left">
                 <h2 class="featurette-heading text-center">Our Aim & Objective</h2>
                 <p class="info text-center fs-5">GPUG (Graphics Processing Users Group) Club aims to make every student
                     familiar with the exploration of GPUs that play a gigantic role in various domains such as Parallel
@@ -110,7 +112,7 @@
 
     <div class="container cont2 text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
-            <div class="col-md-7 main-cont2">
+            <div class="col-md-7 main-cont2" data-aos="fade-up-right">
                 <h2 class="featurette-heading text-center">What We Do?</h2>
                 <p class="info text-center fs-5">We help students explore and gain interest in GPU technology and its
                     significance in different domains by contacting leading companies in the field and conducting
@@ -118,7 +120,7 @@
                     in becoming experienced in GPU technology and in helping them to fetch jobs related to this field.
                 </p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-up-left">
                 <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                     src="images/aboutpic1.png" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice">
                 </img>
@@ -131,13 +133,13 @@
 
     <div class="container cont2 text-light" id="about">
         <div class="row featurette d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="flip-left">
                 <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto abtpic2"
                     src="images/aboutpic2.png" aria-label="Placeholder: 500x500"
                     preserveAspectRatio="xMidYMid slice">
                 </img>
             </div>
-            <div class="col-md-7 main-cont2">
+            <div class="col-md-7 main-cont2" data-aos="flip-right">
                 <h2 class="featurette-heading text-center">How It Started?</h2>
                 <p class="info text-center fs-5">The GPUG club was established with the major goal in mind being spreading
                     awareness about the GPU technology that has become a major part of various modern spheres of study.
@@ -154,7 +156,7 @@
 
     <!-- Main Container 3 -->
     <div class="container cont3 my-5">
-        <div class="alert text-center text-light bg-dark" role="alert">
+        <div class="alert text-center text-light bg-dark" data-aos="zoom-in" role="alert">
             <p class="mb-0 fs-4 fw-bold">If you have any queries, feel free to contact us</p>
             <hr>
             <a href="contact.html" style="color: black; text-decoration: none;"> <button type="button"
@@ -196,6 +198,7 @@
             $('.loadercont').fadeOut("slow");
         }
     )
+    AOS.init();
     </script>
     <!-- Font Awesome: Dont't copy -->
     <script src="https://kit.fontawesome.com/273b239f7f.js" crossorigin="anonymous"></script>
