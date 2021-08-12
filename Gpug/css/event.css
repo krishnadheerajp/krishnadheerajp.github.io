@@ -10,7 +10,11 @@ body {
   img {
     vertical-align: middle;
   }
-  
+
+  u{
+    text-decoration: none;
+  }
+
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
@@ -22,7 +26,6 @@ body {
   }
   
   .mySlides>img{
-      height: 50vh;
       max-width: 50vw;
   }
   /* Add a pointer when hovering over the thumbnail images */
@@ -35,16 +38,13 @@ body {
   .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 20%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
   }
   
   /* Position the "next button" to the right */
@@ -62,18 +62,23 @@ body {
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 8px 12px;
     position: absolute;
     top: 0;
   }
   
+  #scrollBtn>i{
+    margin-left: 2.2px !important;
+  }
   /* Container for image text */
   .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
+    padding: 6px 40px;
     color: white;
+    font-size: 30px;
   }
   
   .row:after {
@@ -82,10 +87,10 @@ body {
     clear: both;
   }
   
-  /* Six columns side by side */
+  /* n columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 20%;
   }
   
   /* Add a transparency effect for thumnbail images */
