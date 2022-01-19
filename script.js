@@ -77,9 +77,13 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-abtmefiller();
-function abtmefiller() {
-        $('#abtme').fadeToggle(5000);
-        $('.card-text').slideToggle(5000);
-        abtmefiller();
-}
+AOS.init({duration:1500, easing:'ease'});
+
+
+// abtmefiller();
+// $('.card-text').slideToggle(5000);
+// function abtmefiller() {
+//         $('#abtme').fadeToggle(5000);
+//         abtmefiller();
+// }
+// $('.card-text').slideToggle(5000);
