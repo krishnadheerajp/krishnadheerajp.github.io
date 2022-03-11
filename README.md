@@ -1,3 +1,2 @@
 # krishnadheerajp.github.io
-Hello World
-just doing overactions
+This is the repository consisting folders and files of my profile website. It also consists some of my projects done while learning from the Coursera course of HML, CSS and JavaScript for Web Developers.
