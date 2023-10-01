@@ -1,57 +1,102 @@
-body{
-    background-color: teal;
-    overflow-x: hidden;
-}
+body {
+    background-color: black !important;
+    color: white !important;
+  }
 
-.navitems{
+  .navitems{
     font-size: 20px;
 }
 
-@media (min-width:0px) and (max-width:600px){
-    .tabcont{
-        overflow-x: scroll;
+  .home-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+  }
+
+  .home-greeting {
+    padding: 5px;
+  }
+
+  .card {
+    display: flex !important;
+    align-content: center !important;
+    justify-content: center !important;
+  }
+
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0.0deg)
     }
-}
-@media (min-width: 0px) and (max-width: 600px){
-    body{
-        overflow-x: scroll;
-    }
+
+    10% {
+      transform: rotate(25.0deg)
     }
 
-@media (min-width: 1199px){
-/* .card-img-top{
-    height: 350px;
-    width: 350px;
-} */
-.pic-card{
-    width: 325px;
-}
-}
-.pic-card{
-    border-radius: 25px;
-}
-.card-img-top{
-    border-radius: 30px;
-}
+    20% {
+      transform: rotate(-8.0deg)
+    }
 
-th,tr,td{
-    border: 1px solid white;
-}
+    30% {
+      transform: rotate(25.0deg)
+    }
 
-td{
-    font-size: 18px;
-}
+    40% {
+      transform: rotate(-8.0deg)
+    }
 
-th{
-    font-size: 20px;
-}
-h1{
+    50% {
+      transform: rotate(25.0deg)
+    }
+
+    60% {
+      transform: rotate(0.0deg)
+    }
+
+    100% {
+      transform: rotate(0.0deg)
+    }
+  }
+
+  .tabcont {
+    overflow-x: scroll;
+  }
+
+  .card>a>i {
+    font-size: 70px;
     color: white;
-}
-u{
-    padding: 5px 15px 15px 15px;
-    background-color: rgb(194, 14, 14);
-    border-radius: 25px;
+  }
+
+  .social-icons {
+    text-decoration: none;
+  }
+
+  .social-icon-card a {
+    transition: 1s;
+  }
+
+  .social-icon-card a:hover {
+    transform: rotate(360deg)
+  }
+
+
+#myBtn:hover {
+  background-color: rgb(46, 46, 46);
+  transform: scale(1.2);
 }
 
 #myBtn {
@@ -68,36 +113,4 @@ u{
   padding: 15px;
   border-radius: 20px;
   font-size: 22px;
-}
-
-i{
-    font-size: 22px;
-}
-
-.fa-facebook,.fa-linkedin,.fa-instagram-square,.fa-envelope-square{
-    font-size: 30px;
-}
-
-.fa-linkedin{
-    color: #2867B2;
-}
-
-.fa-facebook{
-    color: 	#4267B2;
-}
-
-.fa-instagram-square{
-    color:#b48ea8;
-   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-}
-
-.fa-envelope-square{
-    background-color:#D44638;
-    color: white;
-}
-
-#myBtn:hover {
-  background-color: rgb(46, 46, 46);
-  transform: scale(1.2);
 }
