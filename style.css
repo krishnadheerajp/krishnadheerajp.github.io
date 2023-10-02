@@ -1,8 +1,13 @@
 body {
     background-color: black !important;
     color: white !important;
-    overflow-x: hidden;
   }
+*{
+    overflow-x: hidden;
+}
+table{
+      overflow-x: scroll !important;
+}
 
   .navitems{
     font-size: 20px;
