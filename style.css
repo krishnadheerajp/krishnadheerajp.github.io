@@ -116,7 +116,15 @@ table{
   background-color: rgb(194, 14, 14); 
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
   font-size: 22px;
+}
+
+.home-section{
+  margin-top: -80px;
+}
+
+#myBtn > i{
+  overflow-y: hidden !important;
 }
